@@ -1,0 +1,12 @@
+<br>
+<h3>Panel de Tareas</h3>
+<div class="row row-cols-1 row-cols-md-6 g-4">
+
+  <!--Llamar a todas las tareas como hijas -->
+<app-tarea *ngFor="let tarea of tareas"
+[tarea]="tarea"></app-tarea>
+</div>
+
+<div class="text-center">
+<button class="btn btn-primary text-center" routerLink="/tareas">Volver a Tareas</button> <!--Boton para volver a tareas -->
+</div>
